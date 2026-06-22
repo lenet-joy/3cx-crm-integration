@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Crm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" RecordId="" Name="ConnectWiseDirect" Version="1">
+  <Type>Http</Type>
+  <Configuration>
+    <Parameters>
+      <Parameter Name="Dummy" Type="String" Title="System Initialization Mode:" Default="Direct" />
+    </Parameters>
+  </Configuration>
+  <Connection Urn="https://surname-saga-tweak.ngrok-free.dev" Method="POST" ContentType="application/json">
+    <Authentication Type="NoAuthentication" />
+  </Connection>
+  <Scenarios>
+    <Scenario Id="">
+      <Request Url="https://surname-saga-tweak.ngrok-free.dev" Method="POST">
+        <PostValues ContentType="application/json">
+          <Value Name="search">[Number]</Value>
+        </PostValues>
+      </Request>
+      <Rules>
+        <Rule Type="Any" />
+      </Rules>
+      <Response>
+        <Parse>
+          <Outputs Next="" Type="Contact">
+            <Output MapTo="ContactID" Path="[0].ContactID" />
+            <Output MapTo="FirstName" Path="[0].FirstName" />
+            <Output MapTo="LastName" Path="[0].LastName" />
+            <Output MapTo="CompanyName" Path="[0].CompanyName" />
+            <Output MapTo="PhoneBusiness" Path="[0].PhoneBusiness" />
+            <Output MapTo="Email" Path="[0].Email" />
+          </Outputs>
+        </Parse>
+      </Response>
+    </Scenario>
+  </Scenarios>
+</Crm>
