@@ -32,5 +32,22 @@
         </Parse>
       </Response>
     </Scenario>
+
+    <Scenario Id="ReportCall">
+      <Request Url="https://script.google.com/a/macros/lenet.com/s/AKfycbzYDNihv3Y7SX-N9qcpHvsQIZf_U7Ze7GbjytD9n05SGfkTpL2OH7MwR1eZuiSNIWYw_g/exec" Method="POST">
+        <PostValues ContentType="application/json">
+          <Value Name="action">create_ticket</Value>
+          <Value Name="contact_id">[ContactID]</Value>
+          <Value Name="phone_number">[Number]</Value>
+          <Value Name="subject">[Subject]</Value>
+          <Value Name="duration">[Duration]</Value>
+          <Value Name="call_type">[CallType]</Value>
+        </PostValues>
+      </Request>
+      <Rules>
+        <Rule Type="Any" />
+      </Rules>
+      <Response />
+    </Scenario>
   </Scenarios>
 </Crm>
