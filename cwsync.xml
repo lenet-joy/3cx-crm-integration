@@ -11,7 +11,7 @@
   </Connection>
   <Scenarios>
     <Scenario Id="">
-      <Request Url="hhttps://script.google.com/a/macros/lenet.com/s/AKfycbzYDNihv3Y7SX-N9qcpHvsQIZf_U7Ze7GbjytD9n05SGfkTpL2OH7MwR1eZuiSNIWYw_g/exec" Method="POST">
+      <Request Url="https://script.google.com/a/macros/lenet.com/s/AKfycbzYDNihv3Y7SX-N9qcpHvsQIZf_U7Ze7GbjytD9n05SGfkTpL2OH7MwR1eZuiSNIWYw_g/exec" Method="POST">
         <PostValues ContentType="application/json">
           <Value Name="search">[Number]</Value>
         </PostValues>
