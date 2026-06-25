@@ -6,12 +6,12 @@
       <Parameter Name="Dummy" Type="String" Title="System Initialization Mode:" Default="Direct" />
     </Parameters>
   </Configuration>
-  <Connection Urn="https://surname-saga-tweak.ngrok-free.dev" Method="POST" ContentType="application/json">
+  <Connection Urn="https://script.google.com/a/macros/lenet.com/s/AKfycbzYDNihv3Y7SX-N9qcpHvsQIZf_U7Ze7GbjytD9n05SGfkTpL2OH7MwR1eZuiSNIWYw_g/exec" Method="POST" ContentType="application/json">
     <Authentication Type="NoAuthentication" />
   </Connection>
   <Scenarios>
     <Scenario Id="">
-      <Request Url="https://surname-saga-tweak.ngrok-free.dev" Method="POST">
+      <Request Url="hhttps://script.google.com/a/macros/lenet.com/s/AKfycbzYDNihv3Y7SX-N9qcpHvsQIZf_U7Ze7GbjytD9n05SGfkTpL2OH7MwR1eZuiSNIWYw_g/exec" Method="POST">
         <PostValues ContentType="application/json">
           <Value Name="search">[Number]</Value>
         </PostValues>
