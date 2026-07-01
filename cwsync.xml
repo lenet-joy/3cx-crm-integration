@@ -42,6 +42,8 @@
           <Value Name="subject">[Subject]</Value>
           <Value Name="duration">[Duration]</Value>
           <Value Name="call_type">[CallType]</Value>
+          <Value Name="agent">[Agent]</Value>
+          <Value Name="did">[DID]</Value>
         </PostValues>
       </Request>
       <Rules>
